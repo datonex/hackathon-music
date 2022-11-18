@@ -5,22 +5,35 @@ const sounds = {
     "splash": new Audio("assets/audio/thin-splash.mp3")
 }
 
+// sends the square to the play audio function
+function playAudio(e) {
+    sounds[e.target.id].play();
+    
+}
 
 // functions to add click to squares
 function addClickEvent() {
     
     let buttons = document.querySelectorAll(".buttons") // get all buttons
+    console.log(buttons);
     buttons.forEach((item) => { // list button by button as a item
+        console.log(item.classList[0]);
         item.addEventListener("click", playAudio); // add the playAudio function
     });
 }
 
-    // sends the square to the play audio function
-function playAudio(e) {
-    if (e.target.classList[0] == "buttons") { // here I check if it is a button
-        sounds[e.target.id].play(); // here I access the sounds object and get the audio by square id
-   }
-}
+
+// Just to test the buttons:
+let game = document.getElementById("game");
+let square = document.createElement("div");
+square.setAttribute("class", "buttons")
+square.setAttribute("id", "kick")
+square.style.width = "40px";
+square.style.height = "40px";
+square.style.backgroundColor = "red";
+game.appendChild(square);
+addClickEvent();
+
 
 
 // function to play songs in sequence
@@ -33,11 +46,6 @@ function delayNote(time) {
     
 }
 
-// function to play a single audio
-function playAudio() {
-    square_to_audio = {
-    }
-}
 
 // function to start the game
 function startGame() {
