@@ -88,3 +88,34 @@ body {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+
+/* CSS for game-page*/
+
+#button-board-container {
+    
+    height: 80vw;
+    margin-left: 1rem;
+    margin-right:1rem;
+}
+
+.audio-icon {
+    display: flexbox;
+    justify-items:  center;
+    border-width: 0.5vw;
+    border-style: solid;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+#button-board {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-top: 5vw;
+
+    
+}
