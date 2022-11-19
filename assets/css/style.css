@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/*Body styling*/
+
+body {
+    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(0, 21, 71, 0.8)), url(../images/background-image.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Armata, sans-serif;
+}
+
+/*Headings and logo*/
+
+#heading-logo {
+    display: flexbox;
+    text-align: center;
+    padding-top: 20px;
+    color: beige;
+}
+
+/*Container code from W3Schools*/
+.vertical-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container {
+    height: 50vh;
+    position: relative;
+    padding-left: 30%;
+}
+
+.heading {
+    margin:0 auto;
+    font-family: Armata, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 350%;
+}
+
+.logo {
+    margin: 0 auto;
+    font-family: Armata, sans-serif;
+    font-size: 250%;
+    padding-top: 35px;
+}
+
+/*Start button styling*/
+
+#start {
+    display: flexbox;
+    text-align: center;
+}
+
+
+#start-button {
+    margin: 0 auto;
+    font-size: 300%;
+    background-color: whitesmoke;
+    color: black;
+    padding: 5px;
+}
+
+/*Container code from W3Schools*/
+.button-container {
+    height: 50vh;
+    position: relative;
+    padding-left: 40%;
+}
+
+.vertical-container-b {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
