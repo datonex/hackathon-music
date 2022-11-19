@@ -20,11 +20,28 @@ body {
 /*Headings and logo*/
 
 #heading-logo {
+    display: flexbox;
     text-align: center;
     padding-top: 20px;
+    color: beige;
+}
+
+.vertical-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.container {
+    height: 50vh;
+    position: relative;
+    padding-left: 30%;
 }
 
 .heading {
+    margin:0 auto;
     font-family: Armata, sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
@@ -32,6 +49,7 @@ body {
 }
 
 .logo {
+    margin: 0 auto;
     font-family: Armata, sans-serif;
     font-size: 250%;
 }
@@ -39,11 +57,27 @@ body {
 /*Start button styling*/
 
 #start {
+    display: flexbox;
     text-align: center;
-    padding: 50px;
 }
 
+
 #start-button {
+    margin: 0 auto;
     font-size: 300%;
     background-color: forestgreen;
+}
+
+.button-container {
+    height: 50vh;
+    position: relative;
+    padding-left: 40%;
+}
+
+.vertical-container-b {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
