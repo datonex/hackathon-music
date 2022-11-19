@@ -22,3 +22,14 @@ h1, h2 {
     font-size: 250%;
     padding-top: 20px;
 }
+
+/*Start button styling*/
+
+#start {
+    text-align: center;
+    padding: 50px;
+}
+
+#start-button {
+    font-size: 300%;
+}
