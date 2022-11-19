@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
 * {
     margin: 0;
     border: 0;
@@ -12,15 +14,21 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: Armata, sans-serif;
 }
 
 /*Headings and logo*/
 
-h1, h2 {
+#heading-logo {
     text-align: center;
-    font-size: 250%;
     padding-top: 20px;
+}
+
+.heading {
+    font-family: Armata, sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 350%;
 }
 
 /*Start button styling*/
@@ -32,4 +40,5 @@ h1, h2 {
 
 #start-button {
     font-size: 300%;
+    background-color: forestgreen;
 }
