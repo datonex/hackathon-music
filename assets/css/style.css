@@ -19,42 +19,30 @@ body {
 
 /*Headings and logo*/
 
-#heading-logo {
-    display: flexbox;
-    text-align: center;
-    padding-top: 20px;
-    color: beige;
-}
 
 /*Container code from W3Schools*/
-.vertical-container {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
 
-.container {
-    height: 50vh;
-    position: relative;
-    padding-left: 30%;
-}
 
 .heading {
-    margin:0 auto;
+    /*posiion*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    /*font*/
     font-family: Armata, sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
     font-size: 350%;
 }
 
-.logo {
-    margin: 0 auto;
-    font-family: Armata, sans-serif;
-    font-size: 250%;
-    padding-top: 35px;
+#level {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
 }
+
 
 /*Start button styling*/
 
@@ -96,7 +84,7 @@ body {
     padding: 0.3rem;
     border-style: solid;
     border-width: 0.1rem;
-    height: 80vw;
+    height: 70vw;
     margin-left: 1rem;
     margin-right:1rem;
 }
@@ -117,7 +105,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    margin-top: 5vw;
+    margin-top: 3vw;
 
     
 }
