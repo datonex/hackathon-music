@@ -9,9 +9,9 @@
 /*Body styling*/
 
 body {
-    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url(../images/background-image.png);
-    background-position: right;
-    background-size: contain;
+    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8));
+    background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
@@ -25,7 +25,7 @@ body {
     justify-content: center;
     text-align: center;
     margin-top: 8rem;
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     /*font*/
     font-family: 'Permanent Marker', sans-serif;
     font-weight: bolder;
@@ -47,6 +47,11 @@ body {
     
 }
 
+.image {
+    opacity: 0.5;
+    display: flex;
+    margin: 0 auto;
+}
 
 /*Start button styling*/
 
