@@ -9,11 +9,15 @@
 /*Body styling*/
 
 body {
-    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url(../images/background-image.png);
-    background-position: top right;
-    background-size: contain;
+    /*Background Image by Chen from Pixabay */
+    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url('../images/music-notes.jpg');
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     height: 100vh;
+    width: 100vw;
+    background-color: darkcyan;
 }
 
 /*Headings and logo*/
@@ -47,7 +51,6 @@ body {
     
 }
 
-
 /*Start button styling*/
 
 #start {
@@ -68,6 +71,7 @@ body {
 
 /*Rules list*/
 
+/*dummy-commit*/
 #rules-box {
     border-style: solid;
     border-color: #fff;
@@ -101,7 +105,7 @@ body {
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 12px;
-    height: 70vw;
+    height: 18rem;
     margin-left: 1rem;
     margin-right:1rem;
     margin-top: 2rem;
@@ -281,3 +285,42 @@ body {
   }
 
 /*________________________________________________________________________________________________________________*/
+
+/*Media queries*/
+
+@media screen and (min-width: 390px) {
+/*Application designed mobile first*/
+}
+
+@media screen and (min-width: 538px) {
+    #button-board-container {
+        height: 11rem;
+    }
+}
+
+/* Tablet media query*/
+@media screen and (min-width: 698px) {
+    #button-board-container {
+        height: 17rem;
+        width: 25rem;
+        display: flex;
+        margin: 0 auto;
+    }
+
+
+    #button-board {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+}
+
+/*Media query for Larger screen */
+
+@media screen and (min-width: 800px) {
+    #button-board-container {
+        display: flex;
+        margin: 0 auto;
+    }
+}
