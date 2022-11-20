@@ -76,19 +76,22 @@ so that i can play the game with ease.
 
  * Team worked on each task by making a fork of the original copy of the repo.
 
- * Team created a branch name and add individual work to the project repo using git add command. 
+ * Team created a branch name and add individual work to the project repo using ```git add command```. 
 
  * A pull request is created and added to the project logs.
    
- * The  project lead approver reviewed the pull request and merged to the project repo.
+ * The project lead reviewed and approved the pull request and merged to the project repo.
 
  
  ## Acknowledgements
 
 To all the memorist-game team members, your time and contrbution is highly valued.Thank you.
+To our Facilitator- Alissa Troiano, thank you for your support and checkpoints.
 
 ## Credits
 
  - Background image by Gordon Johnson from Pixabay.
  - Font is Armata from Google fonts.
  - Container vertical code is from W3Schools
+ - Play button : https://codepen.io/b29/pen/jmNvJq
+ - Font:  Permanent marker 
