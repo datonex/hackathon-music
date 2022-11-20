@@ -63,7 +63,7 @@ so that i can play the game with ease.
 
  Wireframe has been designed based on on high level functionality of the music game, some of this  might not be displayed in the final product of the game memory board.
 
-  * [**mobile-layout page**](assets/wireframe/mobile-layout.png) 
+  * [**Mobile-layout page**](assets/wireframe/mobile-layout.png) 
   * [**Tablet-Game page**](assets/wireframe/Tablet-gamepage.png)
   * [**Tablet-Home page**](assets/wireframe/Tablet-homepage.png)
   * [**Desktop- game layout1**](assets/wireframe/Desktop-gameLayoutA.png)
