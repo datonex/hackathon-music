@@ -1,53 +1,125 @@
-// create sequences object
-const sounds = {
-    "kick": new Audio("assets/audio/808sub.mp3"),
-    "snare": new Audio("assets/audio/ambient_snare.mp3"),
-    "splash": new Audio("assets/audio/thin-splash.mp3")
+//Initial References
+const countValue = document.getElementById('count');
+const colorPart = document.querySelectorAll('.audio-icon');
+const container = document.querySelector('.container');
+const startButton = document.querySelector('#start');
+const restartText = document.getElementById('restart');
+const result = document.querySelector('#result');
+const wrapper = document.querySelector('.button-board-container');
+
+//Mapping Colors By Creating Colors Object
+const colors = {
+  button1: {
+    current: 'rgb(75, 136, 216)',
+    new: 'rgb(47, 47, 187)',
+  },
+  button2: {
+    current: 'rgb(216, 157, 75)',
+    new: 'rgb(187, 182, 47)',
+  },
+  button3: {
+    current: 'rgb(226, 69, 142)',
+    new: 'rgb(173, 21, 76)',
+  },
+  button4: {
+    current: 'rgb(69, 226, 226)',
+    new: 'rgb(21, 54, 173)',
+  },
+  button5: {
+    current: 'rgb(24, 173, 84)',
+    new: 'rgb(36, 97, 39)',
+  },
+  button6: {
+    current: 'rgb(72, 36, 97)',
+    new: 'rgb(207, 41, 204)',
+  },
+};
+
+let randomColors = [];
+let pathGeneratorBool = false;
+let count = 0;
+let clickCount = 0;
+
+//Function to start game
+startButton.addEventListener('click', () => {
+  count = 0;
+  clickCount = 0;
+  randomColors = [];
+  pathGeneratorBool = false;
+  wrapper.classList.remove('hide');
+  container.classList.add('hide');
+  pathGenerate();
+});
+
+//Function to decide the Random sequence
+const pathGenerate = () => {
+  randomColors.push(generateRandomValue(colors));
+  count = randomColors.length;
+  pathGeneratorBool = true;
+  pathDecide(count);
+};
+
+//Function to get a random value from object
+const generateRandomValue = obj => {
+  let arr = Object.keys(obj);
+  return arr[Math.floor(Math.random() * arr.length)];
+};
+
+//Function to play the sequence
+const pathDecide = async count => {
+  countValue.innerText = count;
+  for (let i of randomColors) {
+    let currentColor = document.querySelector(`.${i}`);
+    await delay(500);
+    currentColor.style.backgroundColor = `${colors[i]['new']}`;
+    await delay(600);
+    currentColor.style.backgroundColor = `${colors[i]['current']}`;
+    await delay(600);
+  }
+  pathGeneratorBool = false;
+};
+
+//Delay for blink effect
+async function delay(time) {
+  return await new Promise(resolve => {
+    setTimeout(resolve, time);
+  });
 }
 
-
-// functions to add click to squares
-function addClickEvent() {
-    
-    let buttons = document.querySelectorAll(".buttons") // get all buttons
-    buttons.forEach((item) => { // list button by button as a item
-        item.addEventListener("click", playAudio); // add the playAudio function
-    });
-}
-
-    // sends the square to the play audio function
-function playAudio(e) {
-    if (e.target.classList[0] == "buttons") { // here I check if it is a button
-        sounds[e.target.id].play(); // here I access the sounds object and get the audio by square id
-   }
-}
-
-
-// function to play songs in sequence
-// calls play audio
-function playSongs(songs) {
-}
-
-// delay
-function delayNote(time) {
-    
-}
-
-// function to play a single audio
-function playAudio() {
-    square_to_audio = {
+//When user click on the colors
+colorPart.forEach(element => {
+  element.addEventListener('click', async e => {
+    //if user clicks the same color then next level
+    if (pathGeneratorBool) {
+      return false;
     }
-}
+    if (e.target.classList[1] == randomColors[clickCount]) {
+      //Color blink effect on click
+      e.target.style.backgroundColor = `${colors[randomColors[clickCount]]['new']}`;
+      await delay(500);
 
-// function to start the game
-function startGame() {
-}
+      e.target.style.backgroundColor = `${colors[randomColors[clickCount]]['current']}`;
 
-// create endgame screen and show points
-function endGame() {
-}
+      //User click
+      clickCount += 1;
+      //Next level if number of valid clicks == count
+      if (clickCount == count) {
+        clickCount = 0;
+        pathGenerate();
+      }
+    } else {
+      lose();
+    }
+  });
+});
 
-// Game loop function
-function gameLoop() {
-    // keep track of points, username, calls songs
-}
+//Function when player executes wrong sequence
+const lose = () => {
+  result.innerHTML = `<h2 class="level"> Your Score: </h2>
+                      <h2 class="level">${count}</h2>`;
+  result.classList.remove('hide');
+  container.classList.remove('hide');
+  wrapper.classList.add('hide');
+  restartText.classList.remove('hide');
+  startButton.classList.remove('hide');
+};

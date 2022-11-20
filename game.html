@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Title</title>
-    
-</head>
-<body>
-
+  </head>
+  <body>
     <!--Header and logo for welcome page-->
     <div class="container">
-        <div id="heading-logo" class="vertical-container">
-            <h1 class="heading">MEMORIST</h1>
-            <h2 id="level">Level 1</h2>
-        </div>
+      <div id="heading-logo" class="vertical-container">
+        <h1 class="heading">MEMORIST</h1>
+      </div>
+    </div>
+    <div id="result">
+      <h2 class="level">Level</h2>
+      <h2 id="count" class="level">00</h2>
     </div>
 
     <div>
-        <div>
-            <a class="play-btn" href="#"></a>
-        </div>
+      <div>
+        <button class="play-btn" id="start" aria-label="start game"></button>
+      </div>
+      <h2 class="level hide" id="restart">Play Again</h2>
     </div>
-    
-    <div id="button-board-container">
-        <div id="button-board">
-                <button class="audio-icon" id="button-1">sound 1</button>
-                <button class="audio-icon" id="button-2">sound 2</button>
-                <button class="audio-icon" id="button-3">sound 3</button>
-                <button class="audio-icon" id="button-4">sound 4</button>
-                <button class="audio-icon" id="button-5">sound 5</button>
-                <button class="audio-icon" id="button-6">sound 6</button>
-        </div>
+
+    <div class="button-board-container hide">
+      <div id="button-board">
+        <button class="audio-icon button1">sound 1</button>
+        <button class="audio-icon button2">sound 2</button>
+        <button class="audio-icon button3">sound 3</button>
+        <button class="audio-icon button4">sound 4</button>
+        <button class="audio-icon button5">sound 5</button>
+        <button class="audio-icon button6">sound 6</button>
+      </div>
     </div>
-    
-
-</body>
-<!--Fontawesome icons-->
-<script src="https://kit.fontawesome.com/0e281923af.js" crossorigin="anonymous"></script>
-
+  </body>
+  <!--Fontawesome icons-->
+  <script src="https://kit.fontawesome.com/0e281923af.js" crossorigin="anonymous"></script>
+  <script src="assets/javascript/script.js"></script>
 </html>
