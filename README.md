@@ -9,7 +9,7 @@ We have applied scrumm methdodology principles.
 
 ## User Stories 
 
-**Persona**: Gamer
+**Persona**: Gamer 
 
 1. As a gamer i am presented with a music memory game board,
    so that i can play the game.
@@ -19,16 +19,20 @@ We have applied scrumm methdodology principles.
    so that i can press the start game button to play the game. 
    **Acceptance criteria**: Gamer was able to click the start game button and play.
 
-3. As gamer,i want to be able to listen to just the audio
+3. As a gamer, i want to be able to use the slider button to zoom in and out and rotate the game board
+so that i can play the game with ease.
+**Acceptance criteria**:  Gamer was able to zoom in and out and rotate the game board
+
+4. As gamer,i want to be able to listen to just the audio
    so that  i can hear the sound 
    **Acceptance criteria**: Gamer was able to listen to  the audio and hear the sound.
 
 
-4. As gamer,i want to be able to play the sound in sequence
+5. As gamer,i want to be able to play the sound in sequence
    so that i can play back my favorite sound.
   **Acceptance criteria** : Gamer was able to play sound in sequence, and played back its favourite sound
 
-5. As a gamer, i want to press the button to replay my favourite sound patterns .
+6. As a gamer, i want to press the button to replay my favourite sound patterns .
  so that i can test my memory level.
  **Acceptance criteria** :  Gamer was able to play favourite sound patterns from memory.
  
@@ -37,6 +41,7 @@ We have applied scrumm methdodology principles.
 
 *Test objective* : For the gamer to play the game in sequence, by clicking the start game button and listen to sequence of sounds in patterns.
 
+* We have conducted the testing based on the user stories
 
 * The test was conducted across browsers- Firefox and Google Chrome and Safari 
 
