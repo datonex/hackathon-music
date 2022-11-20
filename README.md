@@ -5,6 +5,7 @@
 
 The theme of the project is a music memory game board.The user interface is simple design which enables user to click the button to hear a sound and try to repeat the same sound in their memory. This is a fun game to help with concentration and focus.
 The initiative for this project is for students to apply their knowledge and collaborate in team to bring up ideas to build a functional music game page incorporating Code Institute lessons such as Html, CSS and Javascript.
+We have applied scrumm methdodology principles.
 
 ## User Stories 
 
@@ -44,7 +45,7 @@ The initiative for this project is for students to apply their knowledge and col
 
 * User Acceptance test was done by the scrum team and received feedback on the functioality.
 
-*  The user acceptance test was signed off. 
+*  The user acceptance test was signed off by scrum master.
 
 
  ## Wireframes:
