@@ -11,10 +11,12 @@
 body {
     /*Background Image by Chen from Pixabay */
     background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url('../images/music-notes.jpg');
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     height: 100vh;
+    width: 100vw;
     background-color: darkcyan;
 }
 
@@ -286,6 +288,28 @@ body {
 
 /*Media queries*/
 
-@media screen and (min-width: 356px) {
-    
+@media screen and (min-width: 390px) {
+/*Application designed mobile first*/
+}
+
+@media screen and (min-width: 538px) {
+    #button-board-container {
+        height: 11rem;
+    }
+}
+
+/* Tablet media query*/
+@media screen and (min-width: 698px) {
+    #button-board-container {
+        height: 17rem;
+        width: 25rem;
+    }
+
+
+    #button-board {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
 }
