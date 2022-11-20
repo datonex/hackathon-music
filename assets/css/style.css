@@ -10,7 +10,7 @@
 
 body {
     background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url(../images/background-image.png);
-    background-position: top right;
+    background-position: right;
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
@@ -68,6 +68,7 @@ body {
 
 /*Rules list*/
 
+/*dummy-commit*/
 #rules-box {
     border-style: solid;
     border-color: #fff;
@@ -101,7 +102,7 @@ body {
     border-style: solid;
     border-width: 0.1rem;
     border-radius: 12px;
-    height: 70vw;
+    height: 18rem;
     margin-left: 1rem;
     margin-right:1rem;
     margin-top: 2rem;
