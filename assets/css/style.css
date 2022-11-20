@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 * {
     margin: 0;
     border: 0;
@@ -9,82 +9,275 @@
 /*Body styling*/
 
 body {
-    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(0, 21, 71, 0.8)), url(../images/background-image.png);
-    background-position: center center;
+    background-image: linear-gradient(to bottom right, rgba(13, 118, 115, 0.8), rgba(79, 96, 134, 0.8)), url(../images/background-image.png);
+    background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
     height: 100vh;
-    font-family: Armata, sans-serif;
 }
 
 /*Headings and logo*/
 
-#heading-logo {
-    display: flexbox;
-    text-align: center;
-    padding-top: 20px;
-    color: beige;
-}
-
-/*Container code from W3Schools*/
-.vertical-container {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.container {
-    height: 50vh;
-    position: relative;
-    padding-left: 30%;
-}
 
 .heading {
-    margin:0 auto;
-    font-family: Armata, sans-serif;
+    /*position*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    /*font*/
+    font-family: 'Permanent Marker', sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
     font-size: 350%;
+    color:rgb(18, 15, 17)
 }
 
-.logo {
-    margin: 0 auto;
-    font-family: Armata, sans-serif;
-    font-size: 250%;
-    padding-top: 35px;
+.logo { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Armata', sans-serif;
 }
+
+#level {
+    display: flex;
+    justify-content: center;
+    font-family: 'Permanent Marker', sans-serif;
+    
+}
+
 
 /*Start button styling*/
 
 #start {
-    display: flexbox;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 
 #start-button {
-    margin: 0 auto;
-    font-size: 300%;
+    font-size: 2rem;
     background-color: whitesmoke;
     color: black;
     padding: 5px;
     border-radius: 15px;
     border: 2px solid black;
+    margin-top: 1rem;
 }
 
-/*Container code from W3Schools*/
-.button-container {
-    height: 50vh;
+/*Rules list*/
+
+#rules-box {
+    border-style: solid;
+    border-color: #fff;
+    border-width: 0.2rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.rules-list {
+    /*font*/
+    font-family: 'Armata', sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #fff;
+    /*position*/
+    line-height: 1.8rem;
+    justify-content: center;
+    list-style-type: square;
+    padding: 0.2rem 0.2rem 1.5rem;
+    text-align:center;
+}
+
+
+/* CSS for game-page*/
+
+#button-board-container {
+    padding: 0.7rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 12px;
+    height: 70vw;
+    margin-left: 1rem;
+    margin-right:1rem;
+    margin-top: 2rem;
+}
+
+.audio-icon {
+    display: flexbox;
+    justify-items:  center;
+    border-width: 0.5vw;
+    border-style: solid;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+   
+}
+
+#button-board {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+
+/*Button styling*/
+
+.audio-icon {
+    border-radius: 12px;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    width: 10rem;
+    height: 5rem;
+    overflow: hidden;
+    transition: .6s;
+}
+
+
+#button-1 {
+    background-color: rgb(75, 136, 216);
+}
+
+#button-1:hover {
+    background-color: rgb(47, 47, 187)
+}
+
+#button-2 {
+    background-color: rgb(75, 136, 216);
+}
+
+#button-2:hover {
+    background-color: rgb(47, 47, 187)
+}
+#button-3 {
+    background-color: rgb(226, 69, 142);
+}
+
+#button-3:hover {
+    background-color: rgb(173, 21, 76)
+}
+
+
+#button-4 {
+    background-color: rgb(226, 69, 142);
+}
+
+#button-4:hover {
+    background-color: rgb(173, 21, 76)
+}
+
+#button-5 {
+    background-color: rgb(24, 173, 84)
+}
+
+#button-5:hover {
+    background-color: rgb(36, 97, 39);
+}
+
+#button-6 {
+    background-color: rgb(24, 173, 84)
+}
+
+
+#button-6:hover {
+    background-color: rgb(36, 97, 39);
+}
+
+/*________________________________________________________________________________________________________________*/
+
+
+/*Play button: code imported from external source @https://codepen.io/b29/pen/jmNvJq*/
+
+.play-btn {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient( rgba(166, 13, 13, 0.745) 60%, rgba(255, 255, 255, 1) 62%);
+    border-radius: 50%;
     position: relative;
-    padding-left: 40%;
-}
+    display: block;
+    margin: 5% auto;
+    box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+  }
+  
 
-.vertical-container-b {
-    margin: 0;
+  .play-btn::after {
+    content: "";
     position: absolute;
+    left: 50%;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
+    -webkit-transform: translateX(-40%) translateY(-50%);
+    transform: translateX(-40%) translateY(-50%);
+    transform-origin: center center;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid #fff;
+    z-index: 100;
+    -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+
+  .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate1 2s;
+    animation: pulsate1 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, .75);
+    top: -30%;
+    left: -30%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+  @-webkit-keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
+  
+  @keyframes pulsate1 {
+    0% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 1;
+      box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1);
+      opacity: 0;
+      box-shadow: none;
+  
+    }
+  }
+
+/*________________________________________________________________________________________________________________*/
