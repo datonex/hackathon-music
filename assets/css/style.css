@@ -303,7 +303,8 @@ body {
     #button-board-container {
         height: 17rem;
         width: 25rem;
-        margin-left: 20vw;
+        display: flex;
+        margin: 0 auto;
     }
 
 
@@ -312,5 +313,14 @@ body {
         flex-wrap: wrap;
         align-content: center;
         justify-content: space-around;
+    }
+}
+
+/*Media query for Larger screen */
+
+@media screen and (min-width: 800px) {
+    #button-board-container {
+        display: flex;
+        margin: 0 auto;
     }
 }
