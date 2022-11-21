@@ -278,6 +278,10 @@ body {
   }
 }
 
+.hide {
+  display: none;
+}
+
 /*________________________________________________________________________________________________________________*/
 
 /*Media queries*/
@@ -287,14 +291,14 @@ body {
 }
 
 @media screen and (min-width: 538px) {
-  #button-board-container {
+  .button-board-container {
     height: 11rem;
   }
 }
 
 /* Tablet media query*/
 @media screen and (min-width: 698px) {
-  #button-board-container {
+  .button-board-container {
     height: 17rem;
     width: 25rem;
     display: flex;
@@ -312,11 +316,8 @@ body {
 /*Media query for Larger screen */
 
 @media screen and (min-width: 800px) {
-  #button-board-container {
+  .button-board-container {
     display: flex;
     margin: 0 auto;
   }
-}
-.hide {
-  display: none;
 }
