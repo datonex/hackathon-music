@@ -1,4 +1,4 @@
-# *PROJECT NAME: Hackathon-Music* : *Hackathon Nov 2022*
+# *PROJECT NAME: Memorist-Hackathon* : *Hackathon Nov 2022*
 
 
 ## Project Overview
